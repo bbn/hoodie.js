@@ -57,4 +57,4 @@ Backbone.Collection::initialize = ->
 
     @findAll = =>
       Backbone.hoodie.store.findAll("#{type}").then (objects) =>
-        @add objects
+        @reset objects
